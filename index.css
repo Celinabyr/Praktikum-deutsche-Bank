@@ -1,3 +1,7 @@
+body {
+    background-image: url(backkground.jpg);
+}
+
 .eins{
     color:black
 }
@@ -10,14 +14,14 @@ h1{
     padding-left: 20px;
 }
 h2{
-color: #313131;
+color: white;
 font-size:2em;
 margin-top: 50px;
 border-bottom:2px red dotted;
 overflow: hidden;
 }
 p{
-    color: #464646;
+    color: white;
     line-height: 50px;
     padding-top: 10px;
     padding-left: 60px;
@@ -34,9 +38,18 @@ margin-left: 10px
 .sidebar{
     width:200px;
     float: right;
-    background: #b20000;
+    background:red
     padding: 25px;
     margin-left: 50px;
     margin-top: 50px;
     color: white;
+    
+}
+.Themen{
+    color:white;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
