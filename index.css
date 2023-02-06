@@ -2,7 +2,7 @@
     color:black
 }
 h1{
-    font-family:`Arial´;
+    font-family:`Arial´
     font: size 4em;
     background: orangered;
     line-height: 50px;
@@ -30,4 +30,13 @@ background: #c8c8c8;
 border-left: solid 25px #4c0000;
 margin-left: 10px
 
+}
+.sidebar{
+    width:200px;
+    float: right;
+    background: #b20000;
+    padding: 25px;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: white;
 }
