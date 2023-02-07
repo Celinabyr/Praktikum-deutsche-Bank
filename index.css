@@ -2,6 +2,50 @@ body {
     background-image: url(mattschwarz2.jpg);
 
 }
+header,
+nav,
+main,
+article,
+section,
+aside,
+footer{
+    border-radius:0px,0.5em 0.5em;
+    border:1px solid;
+    padding: 10px;
+    margin:10px;
+}
+
+header{
+    background: lightsalmon;
+    border-color: #e7c157;
+}
+nav{
+    background: #fffbf0;
+    border-color:#e7c157;
+}
+section{
+    background: #F1F3F4;
+    border-color: slateblue;
+}
+main{
+    display: block;
+    /* für IE*/
+
+    background: #c4ced3;
+    border-color: #8a9da8;
+}
+article{
+background: #ffede0;
+border-color: #df6c20;
+}
+aside{
+    background:#ebf5d7;
+    border-color: #8db243;
+}
+footer{
+    background: #e4ebf2;
+    border-color: #8a9da8
+}
 
 
 .eins{
@@ -22,11 +66,10 @@ body {
        width:50;
      }
 h1{
-    font-family:`Arial´
-    font:size 4em;
+    font-family:´Arial´
     background: orangered;
     line-height: 5px;
-    margin: 0px 0px 0px 10px;
+    margin 0px 0px 0px 10px;
     padding-left: 10px;
     }
 h2{
@@ -47,19 +90,11 @@ p{
 font-size: larger;
 padding-bottom: 10px;
 background: #c8c8c8;
-border-left: solid 25px #4c0000;
+border-left: solid 25px orangered;
 margin-left: 10px
 
 }
-.sidebar{
-    width:200px;
-    float: right;
-    background:red
-    padding: 25px
-    margin-left: 50px;
-    margin-top: 50px;
-    color: white;
-}
+
 
 
 
