@@ -3,24 +3,39 @@ body {
 
 }
 
+
 .eins{
-    color:black
+    color:white;
 }
+
+    #suche{
+     border: 2px solid#999;
+     border-radius: 0.5em;;
+     font-size:1.2;
+      width:10em;
+      transition: width 0.5s ease-in-out;
+
+      }
+
+      #suche:focus {
+       font-size:1.5;
+       width:50;
+     }
 h1{
     font-family:`Arial´
-    font: size 4em;
+    font:size 4em;
     background: orangered;
     line-height: 5px;
     margin: 0px 0px 0px 10px;
     padding-left: 10px;
-}
+    }
 h2{
-color: white;
-font-size:2em;
-margin-top: 50px;
-border-bottom:2px rgb(254, 103, 53) dotted;
-overflow: hidden;
-}
+    color: white;
+    font-size:2em;
+    margin-top: 50px;
+    border-bottom:2px rgb(254, 103, 53) dotted;
+    overflow: hidden;
+    }
 p{
     color: white;
     line-height: 50px;
@@ -40,12 +55,12 @@ margin-left: 10px
     width:200px;
     float: right;
     background:red
-    padding: 25px;
+    padding: 25px
     margin-left: 50px;
     margin-top: 50px;
     color: white;
-    
 }
+
 
 
 
@@ -53,3 +68,4 @@ margin-left: 10px
     display: flex;
     justify-content: space-between;
 }
+
