@@ -1,5 +1,6 @@
 body {
-    background-image: url(backkground.jpg);
+    background-image: url(mattschwarz2.jpg);
+
 }
 
 .eins{
@@ -9,15 +10,15 @@ h1{
     font-family:`Arial´
     font: size 4em;
     background: orangered;
-    line-height: 50px;
+    line-height: 5px;
     margin: 0px 0px 0px 10px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 h2{
 color: white;
 font-size:2em;
 margin-top: 50px;
-border-bottom:2px red dotted;
+border-bottom:2px rgb(254, 103, 53) dotted;
 overflow: hidden;
 }
 p{
@@ -45,9 +46,8 @@ margin-left: 10px
     color: white;
     
 }
-.Themen{
-    color:white;
-}
+
+
 
 .flex {
     display: flex;
