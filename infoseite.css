@@ -1,0 +1,19 @@
+body, html {
+    background-color: #202124;
+    color: white;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    color: black;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex2 {
+    display: flex;
+}
