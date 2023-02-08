@@ -20,7 +20,7 @@ header{
     border-color: black;
 }
 nav{
-    background: #fffbf0;
+    background: white;
     border-color:#e7c157;
 }
 section{
@@ -31,7 +31,7 @@ main{
     display: block;
     /* für IE*/
 
-    background: #c4ced3;
+    background: #e4ebf2;
     border-color: #8a9da8;
 }
 article{
@@ -50,6 +50,7 @@ footer{
 
 .eins{
     color:white;
+    font-size:"5";
 }
 
     #suche{
@@ -72,7 +73,7 @@ h1{
     margin 0px 0px 0px 5px;
     padding-left: 10px;
     }
-h2{
+.zwei{
     color: white;
     font-size:2em;
     margin-top: 10px;
@@ -80,7 +81,7 @@ h2{
     overflow: hidden;
     }
 p{
-    color: white;
+    color: black;
     line-height: 50px;
     padding-top: 5px;
     padding-left: 60px;
@@ -89,10 +90,16 @@ p{
 .intro{
 font-size: larger;
 padding-bottom: 10px;
-background: #c8c8c8;
+background: white;
 border-left: solid 25px orangered;
 margin-left: 10px
 
+}
+h5{
+    color: black;
+    font-size:1em;
+    margin-top: 10px;
+    overflow: hidden;
 }
 
 
@@ -103,4 +110,3 @@ margin-left: 10px
     display: flex;
     justify-content: space-between;
 }
-

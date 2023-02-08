@@ -14,19 +14,27 @@
 <body>
     <header>
         <nav class="flex">
-            <div><h1><img src="Logos2.png"width="100"</h1></div>
+            <div><h1><img src="Logos2.png"width="70"</h1></div>
             <div><h1>
-                <label for="suche">Suchbegriff eingeben </label>
-                <input type="search"id="suche"
+               <form>
+                <label for ="suche">Suchbegriff eingeben</label>
+                <input type="search" id="suche"
                 placeholder="Suche...">
-                <form action="#">
-                    <p>
-                        <label>
+                <form role="search" method="GET"
+                action="https://ducduckgo.com/">
+                <input name="q" type="search" aria-label="Suche auf wikipedia.de" />
+                <input name="site" type="hidden"
+                value="wikipedia.de"/>
+                <button>Suchen</button>
+               </form>
+               <form action="#">
+                <p>
+                    <label>
                         Projekte
                         <input type="search" list="Projekt">
                         <datalist id="Projekt">
                             <option value="SQL">
-                            <option value="Netzwerke">
+                            <option value="Natzwerke">
                             <option value="Datenbanken">
                             <option value="Scratch">
                             <option value="IT-Sicherheit">
@@ -34,11 +42,14 @@
                             <option value="Java">
                             <option value="Design Thinking">
                             <option value="Webseitenprogrammierung">
+
                         </datalist>
-                        </label>
-                        <button>suchen!</button>
-                    </p>
-                </form>
+                    </label>
+                    <button>Suchen!</button>
+                </p>
+               </form>
+
+
             </h1></div>
         </nav>
     </header> 
@@ -52,52 +63,38 @@
     <main>
        <article>
         <h1 class="eins"</h1>Praktikum Deutsche Bank </h1>
-        <p class="intro"Zur <a href="https://htmlkurs.ch/beispiele/"> Webseite noch einfügen</a> gehen...</p>
+        <p </p>
         </article>
+
+        <h2> Einleitung</h2>
+        <img src="deutsche-bank-345__v-original.jpg"width="600"/>
+        <div style="float:right"></div>
+
+        <p style="margin-right:5px.5px"> Diese Webseite soll unsere zwei Wochen im Praktikum der deutschen Bank beschreiben. Klicke auf die unten genannten Links um unsere Erfahrungen zu teilen.</p>
+        <p> Zweiter Absatz? möglw. Informtionen über deutsche Bank</p>
+
+
         <aside>
             <section>
-            <h3>Kontakt</h3>
+            <h3>Woche 1</h3>
             <ul>
-                <li><a href="link_1.html">Wiki</a></li>
-                <li><a href="link2_2.html">Blog</a></li>
-                <li><a href="link_3.html">Forum</a></li>
+                <li><a href="link_1.html">Grundlagen Informatik,Netzwerke</a></li>
+                <li><a href="link2_2.html">Scratch</a></li>
+                <li><a href="link_3.html">Datenbanken/SQL</a></li>
+                <li><a href="link_4.html">IT-Sicherheit und Design Thinking</a></li>
+                <li><a href="link_5.html">JAVA</a></li>
             </ul>
             </section>
 
             <section>
-                <h3>Weiterführende Links</h3>
+                <h3>Woche 2</h3>
                 <ul>
-                    <li><a href="link_1.html">Wiki</a></li>
-                    <li><a href="link2_2.html">Blog</a></li>
-                    <li><a href="link_3.html">Forum</a></li> 
+                    <li><a href="link_1.html">Webseitenprogrammierung</a></li>
+                    
                 </ul>
             </section>
         </aside>
 
-    <h2> Einleitung</h2>
-         <p> Diese Webseite soll unsere zwei Wochen im Praktikum der deutschen Bank beschreiben. Klicke auf die unten genannten Links um unsere Erfahrungen zu teilen.</p>
-         <p> Zweiter Absatz? möglw. Informtionen über deutsche Bank</p>
-        
-    <h2 class="zwei"</h1> </h2>Themengebiete</h2>
-                        <ul>
-                          <li> Netzwerke</li>
-                          <li>Buisness Analyse</li>
-                          <li>Webseiten
-                        <ul>
-                              <li>HTML</li>
-                             <li>CSS</li>
-                             <li>JAVA SCRIPT</li>
-                        </ul>
-                        </li>
-                          <li> Datenbanken
-                         <ul>
-                           <li>SQL</li>
-                        </ul>
-                        </li>
-                           <li>etc.</li>
-                         </ul>
-
-     <h2> Deutsche Bank Bild </h2>
      <img src="deutsche-bank-345__v-original.jpg"width="300" />
 
     </main>
@@ -110,7 +107,7 @@
        </p>
 
        <form>
-
+        <h5>Kontakt</h5>
         <label for="e-mail">E-Mail Adresse:
             <input id="e-mail" name="e-mail"
         </label>
@@ -139,8 +136,208 @@
 
         
 
-        <input type="submit" value="senden"><nowiki> 
+        <button type="reset">Eingaben zurücksetzen</button>
+        <button type="submit">Eingaben absenden</button>
        </form>
+</footer>   
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="infoseite.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
+            <img src="Unbenannt.png.logo.png" width="64" height="64">
+          </a>
+
+          <!-- <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a> -->
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="./index.html">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              Documentation
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About
+                </a>
+                <a class="navbar-item">
+                  Jobs
+                </a>
+                <a class="navbar-item">
+                  Contact
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="control has-icons-left">
+                    <input class="input" placeholder="">
+                    <span class="icon is-small is-left">
+                      <img src="lupe.png">
+                    </span>
+                </div>
+            </div>
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button" style="background-color: orange;">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <section class="section">
+        <div class="columns">
+            <div class="column">
+              First column
+            </div>
+            <div class="column">
+              Second column
+            </div>
+            <div class="column">
+              Third column
+            </div>
+            <div class="column">
+                <figure class="image is-1by1">
+                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                </figure>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                      <p class="title">
+                        Title 
+                      </p>
+                      <p class="subtitle">
+                        My info here 1234
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                      <p class="title">
+                        Title 
+                      </p>
+                      <p class="subtitle">
+                        My info here 1234
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                      <p class="title">
+                        Title 
+                      </p>
+                      <p class="subtitle">
+                        My info here 1234
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                      <p class="title">
+                        Title 
+                      </p>
+                      <p class="subtitle">
+                        My info here 1234
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+img.is-rounded {
+    /*width: 384px !important;
+    height: 384px !important;*/
+}
+</style>
+<form>
+
+  <label for="e-mail">E-Mail Adresse:
+      <input id="e-mail" name="e-mail"
+  </label>
+
+
+  <label for="vname">Vorname:
+        <input id="vname" name="vname"
+  </label>
+  <label for="zname">Zuname:
+        <input id="zname" name="zname">
+  </label>
+
+  <label for="männl">männlich</label>
+        <input type="radio" id="männl" name="geschlecht" value="0">
+  <label for="weibl">weiblich</label>
+        <input type="radio" id="weibl" name="geschlecht" value="1">
+  <label for="divers">divers</label>
+        <input type="radio" id="queer" name="geschlecht" value="2">
+
+  <label for="alter">über 18:</label>
+        <input type="checkbox" id="alter" name="alter">
+
+  <label for="comment">Kommentar:
+        <input id="comment" name="comment"
+  </label>
+
+  
+
+  <input type="submit" value="senden"><nowiki> 
+ </form>
 </footer>   
 </body>
 
