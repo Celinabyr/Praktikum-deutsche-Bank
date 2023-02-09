@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praktikum Deutsche Bank</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="infoseite.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="./scroll-observer.js"></script>
+    <script src="./search-bar.js"></script>
 </head>
 
 <body>
@@ -41,27 +43,53 @@
                   <a href="https://www.deutsche-bank.de/pk.html">Webseite DB</a>
                   
                 </a>
-                
+
                 <a class="navbar-item">
-                   <a href="http://127.0.0.1:5500/subseite%20contact.html">Kontakt</a>
+                    <a href="http://127.0.0.1:5500/subseite%20contact.html">Kontakt</a>
                 </a>
+
                 <hr class="navbar-divider">
-                <a class="navbar-item">
-                  <a href="http://127.0.0.1:5500/subseite%20contact.html">Report an issue</a>
-                </a>
-              </div>
-            </div>
-          </div>
-      
-          <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="control has-icons-left">
-                    <input class="input" placeholder="">
-                    <span class="icon is-small is-left">
-                      <img src="lupe.png">
-                    </span>
+              <a class="navbar-item" href="http://127.0.0.1:5500/subseite%20contact.html">Report an issue</a>
+
                 </div>
-            </div>
+                </div>
+                
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="control has-icons-left">
+                            <input class="input" onclick="openModal()" readonly placeholder="Suche nach Themen...">
+                            <span class="icon is-small is-left">
+                              <img src="lupe.png">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal" id="searchModal">
+                      <div class="modal-background" onclick="closeModal()"></div>
+                      <div class="modal-content">
+                        <div class="card">
+                          <div class="card-content">
+                            <div class="content">
+                              <div class="control has-icons-left">
+                                <input class="input" id="searchInput" onkeyup="search()" placeholder="Suche nach Themen...">
+                                <span class="icon is-small is-left">
+                                  <img src="lupe.png" width="30" height="30">
+                                </span>
+                              </div>
+            
+                              <ul id="searchList">
+                                <li><a class="navbar-item has-text-link" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Grundlagen"" onclick="closeModal()">Grundlagen der Informatik-Netzwerk</a></li>
+                                <li><a class="navbar-item has-text-link" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Scratch"" onclick="closeModal()">Scratch</a></li>
+                                <li><a class="navbar-item has-text-link" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Datenbanken"" onclick="closeModal()">Datenbanken-SQL</a></li>
+                                <li><a class="navbar-item has-text-link" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Business"" onclick="closeModal()">Business Analyse</a></li>
+                                <li><a class="navbar-item has-text-link" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Java"" onclick="closeModal()">Java</a></li>
+                                <li><a class="navbar-item has-text-link" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Programmieren"" onclick="closeModal()">Programmieren</a></li>
+                                <li><a class="navbar-item has-text-link" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Design"" onclick="closeModal()">Design Thinking</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
             <div class="navbar-item">
               <div class="buttons">
                 <button style="background-color: orange;">
@@ -100,36 +128,17 @@
                     </a>
             
                     <div class="navbar-dropdown">
-                      <a class="navbar-item">
-                        <a href="link_2.html">Scratch</a>
-                      </a>
-                      <a class="navbar-item">
-                        <a href="link_3.html">Grundlagen der Informatik</a>
-                      </a>
-                      <a class="navbar-item">
-                         <a href="link_1.html">SQL/Datenbanken
-                        </a>
-                         </a>
+                      
+                        <a class="navbar-item" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Grundlagen"">Grundlagen der Informatik-Netzwerk</a>
+                        <a class="navbar-item" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Scratch"">Scratch</a>
+                        <a class="navbar-item" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Datenbanken"">Datenbanken-SQL</a>
+                        <a class="navbar-item" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Business"">Business Analyse</a>
+                        <a class="navbar-item" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Java"">Java</a>
+                        <a class="navbar-item" href="http://127.0.0.1:5500/infoseitenemira.html#Design""#Programmieren"">Programmieren</a>
+                        <a class="navbar-item" href="http://127.0.0.1:5500/infoseitenemira.html#Design"#Design"">Design Thinking</a>
+                      
+                      
 
-                      <a class="navbar-item">
-                         <a href="link_4.html">Buisness Analyse
-                         </a>
-                         </a>
-
-                      <a class="navbar-item">
-                         <a href="link_5.html">JAVA
-                         </a>
-                         </a>
-
-                      <a class="navbar-item">
-                         <a href="link_6.html">Design Thinking
-                        </a>
-                         </a>
-
-                      <a class="navbar-item">
-                        <a href="link_7.html">Webseitenprogrammierung
-                         </a>   
-                        </a>
                       
                     </div>
                   </div>

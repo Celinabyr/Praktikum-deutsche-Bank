@@ -1,10 +1,17 @@
 h5{
     font-size:large;
-    color: black;
+    color: white;
+    background-color: orangered
  }
  
  h6{
      font-size:medium;
      color: black;
  
+ }
+ body{
+    background-color:#202124;
+ }
+ footer{
+    background-color: white;
  }

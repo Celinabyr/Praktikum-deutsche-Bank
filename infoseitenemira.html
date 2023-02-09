@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infoseiten zu dem DB Praktikum</title>
+    <link rel="icon" type="image/png" href="Unbenannt.png.logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" as="style">
+    <link rel="stylesheet" href="infoseite.css">
+    <script src="./scroll-observer.js"></script>
+    <script src="./search-bar.js"></script>
+</head>
+
+<body>
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <img class="navbar-item" style="cursor:pointer;" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')" src="Unbenannt.png.logo.png" width="64" height="64">
+    </div>
+  
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="./index.html">
+          Home
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+  
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.deutsche-bank.de/pk.html">Webseite DB</a>
+              <a class="navbar-item" href="http://127.0.0.1:5500/subseite%20contact.html">Kontakt</a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="#Grundlagen">Grundlagen der Informatik-Netzwerk</a>
+              <a class="navbar-item" href="#Scratch">Scratch</a>
+              <a class="navbar-item" href="#Datenbanken">Datenbanken-SQL</a>
+              <a class="navbar-item" href="#Business">Business Analyse</a>
+              <a class="navbar-item" href="#Java">Java</a>
+              <a class="navbar-item" href="#Programmieren">Programmieren</a>
+              <a class="navbar-item" href="#Design">Design Thinking</a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="#Contact">Report an issue</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="control has-icons-left">
+                <input class="input" onclick="openModal()" readonly placeholder="Suche nach Themen...">
+                <span class="icon is-small is-left">
+                  <img src="lupe.png">
+                </span>
+            </div>
+        </div>
+        <div class="modal" id="searchModal">
+          <div class="modal-background" onclick="closeModal()"></div>
+          <div class="modal-content">
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <div class="control has-icons-left">
+                    <input class="input" id="searchInput" onkeyup="search()" placeholder="Suche nach Themen...">
+                    <span class="icon is-small is-left">
+                      <img src="lupe.png" width="30" height="30">
+                    </span>
+                  </div>
+
+                  <ul id="searchList">
+                    <li><a class="navbar-item has-text-link" href="#Grundlagen" onclick="closeModal()">Grundlagen der Informatik-Netzwerk</a></li>
+                    <li><a class="navbar-item has-text-link" href="#Scratch" onclick="closeModal()">Scratch</a></li>
+                    <li><a class="navbar-item has-text-link" href="#Datenbanken" onclick="closeModal()">Datenbanken-SQL</a></li>
+                    <li><a class="navbar-item has-text-link" href="#Business" onclick="closeModal()">Business Analyse</a></li>
+                    <li><a class="navbar-item has-text-link" href="#Java" onclick="closeModal()">Java</a></li>
+                    <li><a class="navbar-item has-text-link" href="#Programmieren" onclick="closeModal()">Programmieren</a></li>
+                    <li><a class="navbar-item has-text-link" href="#Design" onclick="closeModal()">Design Thinking</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="modal-close is-large" onclick="closeModal()"></button>
+        </div>
+        <div class="navbar-item">
+          <div class="buttons">
+            <button class="button" style="background-color: orange;">
+             <a href="http://127.0.0.1:5500/subseite%20login%20or%20sign%20up.html"><strong>Sign up</strong></a>
+            </button>
+            <button class="button">
+              <a href="http://127.0.0.1:5500/subseite%20login%20or%20sign%20up.html">Log in</a>
+            </button>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container is-fluid">
+  <section class="section has-background-dark" id="Grundlagen">
+      <div class="columns">
+          <div class="column is-8">
+            <h1 class="title has-text-white is-size-1">Grundlagen der Informatik-Netzwerk</h1>
+            <h2 class="subtitle has-text-white">30.1.2023</h2>
+          </div>
+          <div class="column">
+              <figure class="image">
+                  <img class="is-rounded" src="https://thumbs.gfycat.com/FreeEmbellishedBluefintuna-size_restricted.gif">
+              </figure>
+          </div>
+      </div>
+      <section class="section">
+        <p class="has-text-white is-size-2 has-text-centered">Ein Netzwerk ist die Verbindung von mindestens zwei Computersystemen, entweder per Kabel oder drahtlos über eine Funkverbindung</p>
+      </section>
+
+      <div class="columns">
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                  <div class="card-content">
+                    <p class="title">
+                      Wir redeten über Informatik und Netzwerke wie LAN,MAN,WAN ect.
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                      Wir führten mehrere Tests über Informatik durch
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <section class="section" id="Scratch">
+        <div class="columns">
+            <div class="column is-8">
+              <h1 class="title has-text-black is-size-1">Scratch</h1>
+              <h2 class="subtitle has-text-black">31.1.2023</h2>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img class="is-rounded" src="./Programmieren_lernen_mit_Scratch-1030x572.png">
+                </figure>
+            </div>
+        </div>
+        <section class="section">
+          <p class="has-text-black is-size-2 has-text-centered">Scratch ist eine visuelle Programmiersprache mit der uns vereinfacht gezeigt wurde, wie man Spiele programmiert.</p>
+        </section>
+
+        <div class="columns">
+            <div class="column">
+                <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                    <div class="card-content">
+                      <p class="title">
+                        Zu Beginn wurde uns gezeigt, wie die Seite funktioniert
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                    <div class="card-content">
+                      <p class="title">
+                        Uns wurden viele Prinzipien gezeigt, unter anderem das EVA-Prinzip
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                    <div class="card-content">
+                      <p class="title">
+                        Nach dem Mittagessen sollten wir selbst ein mini - Spiel entwickeln, um die Theorie ins Praktische zu übernehmen
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                    <div class="card-content">
+                      <p class="title">
+                        Zuletzt stellten mehrere ihre Spiele vor
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section has-background-dark" id="Datenbanken">
+      <div class="columns">
+          <div class="column is-8">
+            <h1 class="title has-text-white is-size-1">Datenbanken-SQL</h1>
+            <h2 class="subtitle has-text-white">1.2.2023</h2>
+          </div>
+          <div class="column">
+              <figure class="image">
+                  <img class="is-rounded" src="./lokale-datenbank-lowdb.jpg">
+              </figure>
+          </div>
+      </div>
+      <section class="section">
+        <p class="has-text-white is-size-2 has-text-centered">Eine Datenbank wird für die Datenverwaltung genutzt, um große Datenmengen mithilfe von SQL einer Datenbanksprache zu bearbeiten und Datenbestände abzufragen.</p>
+      </section>
+
+      <div class="columns">
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                  <div class="card-content">
+                    <p class="title">
+                      Es wurde zunächst erklärt was Datenbanken sind und wie sie mit SQL funktionieren
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                      Danach wurden uns SQL Befehle gezeigt
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="columns">
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                  <div class="card-content">
+                    <p class="title">
+                      Uns wurden Aufgaben zugestellt die wir mit SQL auf einer Webseite lösten
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                      Schließlich spielten wir ein SQL-Island Spiel um es mehr zu lernen
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section" id="Business">
+      <div class="columns">
+          <div class="column is-8">
+            <h1 class="title has-text-black is-size-1">Business Analyse</h1>
+            <h2 class="subtitle has-text-black">2.2.2023</h2>
+          </div>
+          <div class="column">
+              <figure class="image">
+                  <img class="is-rounded" src="Analytics-1024x622.jpeg">
+              </figure>
+          </div>
+      </div>
+      <section class="section">
+        <p class="has-text-black is-size-2 has-text-centered">Im Business Analyse sollen Lösungen empfohlen werden, die es dem Unternehmen ermöglichen, diese Strukturen, Geschäftsregeln und Prozesse zu verbessern</p>
+      </section>
+
+      <div class="columns">
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                  <div class="card-content">
+                    <p class="title">
+                      Am Anfang schauten wir uns ein Bild aus der Niederlande an 
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                      Danach analysierten wir es und schauten nach dem Problem und wie es gelöst wurde
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="columns">
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                  <div class="card-content">
+                    <p class="title">
+                      Der Herr erklärte uns was man beim Business Analyse macht 
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                    Er erklärte uns auch ROBIN am Whiteboard, anhand wie der Markt steigt oder fällt
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <section class="section has-background-dark" id="Java">
+      <div class="columns">
+          <div class="column is-8">
+            <h1 class="title has-text-white is-size-1">Java</h1>
+            <h2 class="subtitle has-text-white">2.2.2023</h2>
+          </div>
+          <div class="column">
+              <figure class="image">
+                  <img class="is-rounded" src="https://blog.consdata.tech/assets/img/posts/2019-03-22-java-darmowa-czy-nie/java-darmowa.png">
+              </figure>
+          </div>
+      </div>
+      <section class="section">
+        <p class="has-text-white is-size-2 has-text-centered">Java ist eine Programmiersprache</p>
+      </section>
+
+      <div class="columns">
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                  <div class="card-content">
+                    <p class="title">
+                      Wir redeten worüber es bei Java geht und welche Befehle es gibt
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                      Danach konnten wir selbst Variablen anlegen
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section" id="Programmieren">
+      <div class="columns">
+          <div class="column is-8">
+            <h1 class="title has-text-black is-size-1">Programmieren</h1>
+            <h2 class="subtitle has-text-black">3.2.2023</h2>
+          </div>
+          <div class="column">
+              <figure class="image">
+                  <img class="is-rounded" src="Why-You-Should-Learn-To-Code.png">
+              </figure>
+          </div>
+      </div>
+      <section class="section">
+        <p class="has-text-black is-size-2 has-text-centered">Programmieren ist ein Teilbereich der Softwareentwicklung, es gibt viele verschiedene Programmiersprachen</p>
+      </section>
+
+      <div class="columns">
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                  <div class="card-content">
+                    <p class="title">
+                      Die Programmiersprachen die wir am Freitag lernten waren HTML,CSS und JavaScript
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                      Zusammen übten wir wie man eine Webseite macht
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="columns">
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                  <div class="card-content">
+                    <p class="title">
+                      Die kommende Woche vom 6.-9. Februar war es unsere Aufgabe in Gruppen eine eigene Webseite zu programmieren über das Schülerpraktikum
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                      Am letzen Tag des Schülerpraktikums stellten alle Gruppen deren Webseiten vor
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <section class="section has-background-dark" id="Design">
+      <div class="columns">
+          <div class="column is-8">
+            <h1 class="title has-text-white is-size-1">Design Thinking</h1>
+            <h2 class="subtitle has-text-white">3.2.2023</h2>
+          </div>
+          <div class="column">
+              <figure class="image">
+                  <img class="is-rounded" src="IN_DEsignthinking_Design-Thinking-2.png">
+              </figure>
+          </div>
+      </div>
+      <section class="section">
+        <p class="has-text-white is-size-2 has-text-centered">Design Thinking ist ein Ansatz, der zum Lösen von Problemen und zur Entwicklung neuer Ideen führen soll. Ziel ist dabei, Lösungen zu finden, die einerseits aus Anwender- oder Nutzersicht überzeugend, andererseits markt- und produktorientiert sind.</p>
+      </section>
+
+      <div class="columns">
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInLeft">
+                  <div class="card-content">
+                    <p class="title">
+                      Wir machten Gedankenexperiment am Anfang, um zu sehen ob wir "Outside the box" denken, da dies wichtig sei
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                      Danach redeten wir über die Design Thinking Prinzipien
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="columns">
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                      Wir sollten aufschreiben welche Menschen bezug auf die Motivation der Schüler haben und besprechten dies am Whiteboard
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card animate--on-visibility" data-animationclass="animate__backInRight">
+                  <div class="card-content">
+                    <p class="title">
+                      Zuletzt redeten wir über verschiedene Personas und wie sie einen wichtigen bezug zum Design Thinking haben
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section" id="Contact">
+    <div class="columns">
+      <div class="column is-half">
+        <form>
+          <div class="field">
+            <label class="label has-text-white">Vorname</label>
+            <div class="control">
+              <input class="input" type="text" required placeholder="Max">
+            </div>
+          </div>
+    
+          <div class="field">
+            <label class="label has-text-white">Zuname</label>
+            <div class="control">
+              <input class="input" type="text" required placeholder="Mustermann">
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label has-text-white">E-Mail Adresse</label>
+            <div class="control">
+              <input class="input" type="email" required placeholder="max.mustermann@example.com" value="">
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label has-text-white">Geschlecht</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>männlich</option>
+                  <option>weiblich</option>
+                  <option>divers</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="field">
+            <div class="control">
+              <label class="checkbox has-text-white">
+                <input type="checkbox">
+                über 18
+              </label>
+            </div>
+          </div>
+          
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link" type="submit">Formular abschicken</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+</body>
+</html> 
+</body>
+
+</html>

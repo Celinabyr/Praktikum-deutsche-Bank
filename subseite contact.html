@@ -43,41 +43,71 @@
 
 
 </header>
-<h5> Leave a comment or write a report!</h5>
+<h5> Hinterlasse uns eine Nachricht</h5>
 <footer>
-    <form>
+    <section class="section" id="Contact">
+        <div class="columns">
+          <div class="column is-half">
+            <form>
+              <div class="field">
+                <label class="label has-text-white">Vorname</label>
+                <div class="control">
+                  <input class="input" type="text" required placeholder="Max">
+                </div>
+              </div>
+        
+              <div class="field">
+                <label class="label has-text-white">Zuname</label>
+                <div class="control">
+                  <input class="input" type="text" required placeholder="Mustermann">
+                </div>
+              </div>
+              
+              <div class="field">
+                <label class="label has-text-white">E-Mail Adresse</label>
+                <div class="control">
+                  <input class="input" type="email" required placeholder="max.mustermann@example.com" value="">
+                </div>
+              </div>
 
-        <label for="e-mail">E-Mail Adresse:
-            <input id="e-mail" name="e-mail"
-      
-        </label>
-      
-      
-        <label for="vname">Vorname:
-              <input id="vname" name="vname"
-        </label>
-        <label for="zname">Zuname:
-              <input id="zname" name="zname">
-        </label>
-      
-        <label for="männl">männlich</label>
-              <input type="radio" id="männl" name="geschlecht" value="0">
-        <label for="weibl">weiblich</label>
-              <input type="radio" id="weibl" name="geschlecht" value="1">
-        <label for="divers">divers</label>
-              <input type="radio" id="queer" name="geschlecht" value="2">
-      
-        <label for="alter">über 18:</label>
-              <input type="checkbox" id="alter" name="alter">
-      
-        <label for="comment">Kommentar:
-              <input id="comment" name="comment"
-        </label>
-      
-        <button type="reset">Eingaben zurücksetzen</button>
-        <button type="submit">Eingaben absenden</button>
-       </form>
-       <h6>Thanks for your comment!</h6>
+              <div class="field">
+                <label class="label has-text-white"> Kommentar</label>
+                <div class="control">
+                    <input class="input" type="Kommentar" required placeholder="...">
+              </div>
+              
+              <div class="field">
+                <label class="label has-text-white">Geschlecht</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>männlich</option>
+                      <option>weiblich</option>
+                      <option>divers</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox has-text-white">
+                    <input type="checkbox">
+                    über 18
+                  </label>
+                </div>
+              </div>
+              
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link" type="submit">Formular abschicken</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <h6>Vielen Dank!</h6>
        </footer>
 </body>
 
