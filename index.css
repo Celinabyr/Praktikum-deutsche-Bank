@@ -1,112 +1,28 @@
-body {
-    background-image: url(mattschwarz2.jpg);
-
-}
-header,
-nav,
-main,
-article,
-section,
-aside,
-footer{
-    border-radius:0px,0.5em 0.5em;
-    border:1px solid;
-    padding: 10px;
-    margin:15px;
-}
-
-header{
-    background: orangered;
-    border-color: black;
-}
-nav{
-    background: white;
-    border-color:#e7c157;
-}
-section{
-    background: #F1F3F4;
-    border-color: slateblue;
-}
-main{
-    display: block;
-    /* für IE*/
-
-    background: #e4ebf2;
-    border-color: #8a9da8;
-}
-article{
-background: #ffede0;
-border-color: #df6c20;
-}
-aside{
-    background:#ebf5d7;
-    border-color: #8db243;
-}
-footer{
-    background: #e4ebf2;
-    border-color: #8a9da8
-}
-
 
 .eins{
-    color:white;
-    font-size:"5";
+    color:black;
+    font-size:"7";
+}
 }
 
-    #suche{
-     border: 2px solid#999;
-     border-radius: 0.5em;;
-     font-size:1.2;
-      width:10em;
-      transition: width 0.5s ease-in-out;
 
-      }
 
-      #suche:focus {
-       font-size:1.5;
-       width:50;
-     }
-h1{
-    font-family:´Arial´
-    background: orangered;
-    line-height: 5px;
-    margin 0px 0px 0px 5px;
-    padding-left: 10px;
-    }
-.zwei{
+body, html {
+    background-color: #202124;
     color: white;
-    font-size:2em;
-    margin-top: 10px;
-    border-bottom:2px rgb(254, 103, 53) dotted;
-    overflow: hidden;
-    }
-p{
+}
+
+header {
+    background-color: white;
+    position: fixed;
     color: black;
-    line-height: 50px;
-    padding-top: 5px;
-    padding-left: 60px;
-
 }
-.intro{
-font-size: larger;
-padding-bottom: 10px;
-background: white;
-border-left: solid 25px orangered;
-margin-left: 10px
-
-}
-h5{
-    color: black;
-    font-size:1em;
-    margin-top: 10px;
-    overflow: hidden;
-}
-
-
-
-
 
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+.flex2 {
+    display: flex;
 }
