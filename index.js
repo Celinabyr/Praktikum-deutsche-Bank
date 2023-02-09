@@ -1,4 +1,4 @@
-document.addEventListener(`DOMContentLoaded`,function()) {
+document.addEventListener(`DOMContentLoaded`,function(); {
     function liveSearch (){
         let contents = document.querySelectorAll(`article`);
         let search_query =document.querySelector(`#search`)
